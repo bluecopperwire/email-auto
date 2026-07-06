@@ -22,4 +22,5 @@ A Python-based mail merge automation script that reads company/contact informati
 - **2026-07-06**: Initial analysis of workspace, CSV headers, and requirement specifications. Initiated project memory tracking.
 - **2026-07-06**: Implementation plan approved. Developed `send_emails.py` with zero dependencies, robust logging, cross-run duplicate protection, and dynamic header search. Verified functionality using dry run simulations. Documented setup in `README.md`.
 - **2026-07-06**: Added blacklist filtering functionality to allow skipping of specific companies or email addresses loaded from `blacklist.txt`. Verified that blacklisted items are successfully skipped and logged under the status `SKIPPED_BLACKLISTED`.
+- **2026-07-06**: Refactored `README.md` to remove syntax errors from git append commands, added clear Git quickstart and cloning guides, and pushed all updates to the remote GitHub repository.
 
