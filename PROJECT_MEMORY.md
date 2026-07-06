@@ -24,4 +24,5 @@ A Python-based mail merge automation script that reads company/contact informati
 - **2026-07-06**: Added blacklist filtering functionality to allow skipping of specific companies or email addresses loaded from `blacklist.txt`. Verified that blacklisted items are successfully skipped and logged under the status `SKIPPED_BLACKLISTED`.
 - **2026-07-06**: Refactored `README.md` to remove syntax errors from git append commands, added clear Git quickstart and cloning guides, and pushed all updates to the remote GitHub repository.
 - **2026-07-06**: Upgraded `README.md` for premium GitHub presentability, incorporating Shields.io badges, a Mermaid workflow flowchart, formatted tables for CSV mappings and statuses, and collapsible configuration guide sections.
+- **2026-07-06**: Executed a successful live "wet dress test" against user-specified test email addresses (`techarchi27@gmail.com` and `nikkifreeman092@gmail.com`) using `test_recipients.csv`. The script logged into Gmail SMTP, successfully sent both emails with their resume attachments, and executed the random anti-spam delays correctly.
 
