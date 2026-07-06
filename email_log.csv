@@ -94,3 +94,100 @@ JOHN RICK GUILLERMO",info@osmthome.com,SENT,Dry run send simulation
 2026-07-06 12:38:51,WT MIGREMO SYSTEMS INC.,OMAR REGALADO,hr@wtmigremo.com,SENT,Dry run send simulation
 2026-07-06 12:38:51,YAKULT PHILIPPINES INC.,CJ COCHING,cjcoching.yakult@gmail.com,SENT,Dry run send simulation
 2026-07-06 12:38:51,YOKOGAWA PHILIPPINES INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:55:21,Test Company A,Dominic Isais,techarchi27@gmail.com,SENT,
+2026-07-06 12:55:45,Test Company B,Nikki Freeman,nikkifreeman092@gmail.com,SENT,
+2026-07-06 12:57:42,5G SECURITY INC.,"LORDGINA L. CRUZ, CHRP",,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,"ABBE TECHNOLOGY SOLUTIONS, INC.",LILIAN B. CUARTEROS,info@abbe.com.ph,SENT,Dry run send simulation
+2026-07-06 12:57:42,ABL ENTERPRISES OPC,BREN M. LEYTE,ablenterprisesphils@gmail.com,SKIPPED_BLACKLISTED,Blacklisted in config file
+2026-07-06 12:57:42,ALBURO ALBURO & ASSOCIATES LAW OFFICES,MELODY CRUZ,mscruz@alburolaw.com,SKIPPED_BLACKLISTED,Blacklisted in config file
+2026-07-06 12:57:42,AQUA SMARTGUARD CORP.,ALICIA PARAISO,info@smartguard.pac,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,AUTOBLOCK CAR ACCESSORIES SHOP,CRISTINE P. AREJOLA,cristine.arejola@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,AVVANZ,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,AXA PHILIPPINES,JOSEPH IAN TERUEL,axa.josephian.teruel@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"BAMACOM, INC.",RICA TALLE,rica.talle@bamacomsew.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"BESTOPTIONS ASSISTANCE, INC.",JON KEVIN T. MENDOZA,kevin.bestoptions@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,BUREAU OF INTERNAL REVENUE,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,BUSINESS SENSE FINANCIAL ADVISORS INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,CANADIAN TOURISM AND HOSPITALITY INSTITUTE,JESCA VALDEZ,administrator@cthi.ph.education,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,CHA REALTY CORPORATION,JAYNEE ADELINE MANGUERRA,admin1@charealty.org,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,CITY OF MANILA,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,COMPETENT MARITIME PROFESSIONALS AND SEA STAFF (COMPASS) TRAINING CENTER INC.,STEPHANIE HAYCO,stephanie.hayco@compass.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,CRECIENDO PHILIPPINES INCORPORATED,SARAH JEAN G. SARDILLAS,hr@creciendo.com.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,CUSYMA TECHNOLOGIES,DHANA VILLAR,john.cu@cusyma.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"DEPARTMENT OF EDUCATION, CAINTA SUB-OFFICE",DR. AURORA DU FLORES,109396@deped.gov.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,DEPARTMENT OF PUBLIC WORKS AND HIGHWAYS CAVITE 1ST DISTRICT ENGINEERING OFFICE,HR OFFICE,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,DEPARTMENT OF SCIENCE AND TECHNOLOGY - SCIENCE EDUCATION INSTITUTE,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,DPWH CENTRAL OFFICE,"AIULYS A. BAÑA
+RHALF B. CAWALING","bana.aiulys@dpwh.gov.ph
+hrmd.jobs@dpwh.com",SKIPPED_INVALID_EMAIL,Invalid email format
+2026-07-06 12:57:42,E-TELLIGENT SOLUTIONS INC.,RIO MAR B. MANTARING,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,EASYBUS PH,MARY CHRIST PADUA,easybusph.marketing@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,EMPLEYADO INC.,LEEN ASHLEY N. MANALO,hr@empleyado.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,ENTROPY TECHNOLOGY INCORPORATION,EDRENE JIREH DE GULA,edsdegula@entropytech.co,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"EY GDS (CS) PHILIPPINES, INC.",MARIEL DECEMBER PALOMARES,iel.palomares@gds.ey.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,FAMTECH INNOVATIVE IT SOLUTIONS,MA. ROXAN O. CALISTE,inquiry@famtech-innovative.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,FIL-GLOBAL IMMIGRATION SERVICES CORPORATION,MICHELLE RIVERA,michelle.rivera@fil-global.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,FOLLOSCO MORALLOS & HERCE,ATTY. TRINA D. SINGSON,tds@fmh.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"FRD FOOD & SPICES, INC. (MESA Philippines)",JANINA REFRAN,yani@foodeeglobal.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"INFINITY ACE SUMMIT LIFE INSURANCE AGENCY, INC.",ALVIN LEABAN BONIFACIO,plukalvinbonifacio@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,INSTALLERSPH IT SOLUTIONS,MEICA I. CRUZ,hr@installersph.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,INTERFREIGHT CARGO EXPRESS INC.,MYRA MANUEL,admin@interfreight.com.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,INTOUCHCX,DOMINIQUE OLFINDO,dominique.olfindo@intouchcx.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,JABEZ MANAGEMENT SOLUTIONS INC,JESSAVIL SALAC,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,JERWIN HDPE PLUMBING SUPPLIES TRADING,RHEA D. REBADULLA,jrwnhdpeplumbingsuppliesadmn@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,KARAMAR CORPORATION,MARLENE COVARRUBIAS,m.covarrubias@karamarcorporation.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,KDDI PHILIPPINES CORPORATION,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,KMC MAG SOLUTIONS INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,KNE COMMERCE HUSTLE LLC,CHRISTEN FLOYD,cdarbitrage@outlook.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"KNOXPORT, INC. (ONE FOOD GROUP: KFC, TOKYO TOKYO AND MISTER DONUT)",SYRYN MAY FERNANDEZ,syryn.fernandez@foodgroup.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,LAGUNA LAKE DEVELOPMENT AUTHORITY,ALLAN ALMARIO,ad@llda.gov.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,LBC EXPRESS INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,"LEXMEET, INC.",KARL MICHAIL GUELA,michail@lexmeet.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,LINCOLN SCHOOL OF ARTS AND LANGUAGES,REGINA LEA D. MAGUDDAYAO,lincolnschoolphils@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,LIZARDBEAR TASKING,MIKO LLOVIDO,miko.llovido@taskus.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,MACQUARIE GROUP SERVICES (PHILIPPINES) INC.,REIGN NIETO,reign.nieto@macquarie.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"MALAYAN INSURANCE COMPANY, INC.",,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,MANILA DEPARTMENT OF SOCIAL WELFARE (MDSW),MA. FE D. GASPAR,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,MERALCO,JANNIE A. KALATA,jakalata@meralco.com.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,MUNICIPALITY OF GENERAL MARIANO ALVAREZ CAVITE,MARC CELINO E. VACIO,marccelino.hrmo@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,NAVITAIRE PHILIPPINES INC.,JHOSSA PADUA,jhossa.padua@amadeus.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,NEXA CORPORATION,TIMOTHY A. ESCOPETE,me@timothyae.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,NORISUSHI INC.,CECILIA CAÑABERAL,ces@sushinori.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,OLLOPA CORPORATION,PHILANDER MIRANDO,ollopainternship@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,OPTIMUMTECH COMPUTER TRADING INC.,FELOMINO CANTILLER JR.,hernandez_gerwin@yahoo.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,OPTOGROW OPERATIONS MANAGEMENT SERVICES,CODY LARDIZABAL,cody@optogrow.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,OSM THOME,"CHANTEL ANNE MARI L. CARREON
+JOHN RICK GUILLERMO",info@osmthome.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"PARTNERSOLUTIONS, CO.",MARY SYRENE V. DAZ,psc.hr.syrene@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,PCCL TAMBULI LABS CO. LTD.,MARIETTA S. LACHICA,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,PEOPLE PROCESSES,RHAMY ALEJEAL,rhamy@peopleprocesses.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,PHILIPPINE SPORTS COMMISSION,"JAN ERROL B. FACUNDO, MMPA",hr@psc.gov.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,PNP HEADQUARTERS,PSMS. DONALYN N. REYES,donalyn35@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,PT&T CORP.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,QUEZON CITY GOVERNMENT,JORGE ARGALES,guided.cdspeso@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,RAGINRIVER ICT CORPORATION,SUSAN S. ALCANTARA,susan.alcantara@ragingriverict.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"REGUS SERVICE CENTRE PHILIPPINES, INC. BV",JOHN MAURICE PADUA,gsc.internship@iwgplc.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,REVLV SOLUTIONS INC.,ANALIZA J. ERANDIO,ajerandio@revlv.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"RUSH TECHNOLOGIES, INC.",YROSE L. BAGUIO,people@rush.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"SANTUARIO DE SAN ANTONIO PARISH FOUNDATION, INC.",REV. FR. MARK ADAME BAKARI,marc_adame@yahoo.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,SEEYOUDOC,MARIE ROSE RAMOS,maroz@seeyoudoc.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,SHELL EMPLOYEES MULTI-PURPOSE COOPERATIVE (SEMPCO),,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,"SM RETAIL, INC.",,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,STAFF SEARCH ASIA SERVICE COOPERATIVE,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,"STAR SPECIAL CORPORATE SECURITY MANAGEMENT, INC.",MARIA FE C. PONTEVEDRA,mariafhepontevedra@yahoo.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,STRATPOINT GLOBAL OUTSOURCING INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,SUN LIFE FINANCIAL ASIA SERVICES LIMITED,LOUIE ANTHONY DEMATERA,louie.dematera@sunlife.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,TAOCROWD INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,TECHONE TELECOMMUNICATION SERVICES INC.,ISIAH CHARLES ESPORTON,esportonisiahcharles@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,TELUS INTERNATIONAL PHILIPPINES INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,TOOLKIT,NIKOLLETE MALIXI,nikki-toolkt@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,TOWER T5 INC.,ANGELINA S. AROMIN,asaromin@newcapitoltire.com.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,TOYOTA NORTH EDSA,ROSALYN O. BAUTISTA,saly.bautista@toyotanorthedsa.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,"TSUKIDEN GLOBAL SOLUTIONS, INC.",,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,"UNILAB, INC.",ENRICO JOSEPH R. FALCON,,SKIPPED_INVALID_EMAIL,Email address is empty
+2026-07-06 12:57:42,VERTIV (SINGAPORE) HOLDINGS PTE. LTD. - ROHQ,ANGEL JOYCE MAGLENTE,AngelJoyce.Maglente@vertivco.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,WHITE CLOAK TECHNOLOGIES INC.,KIMBERLY GAMBAN,kimberly.gamban@whitecloak.com,SKIPPED_BLACKLISTED,Blacklisted in config file
+2026-07-06 12:57:42,"WOODFIELDS CONSULTANTS, INC",ERIKA KAYE R. DAET,ekdaet@wci.com.ph,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,WT MIGREMO SYSTEMS INC.,OMAR REGALADO,hr@wtmigremo.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,YAKULT PHILIPPINES INC.,CJ COCHING,cjcoching.yakult@gmail.com,SKIPPED_DUPLICATE,Already sent in this or a previous run
+2026-07-06 12:57:42,YOKOGAWA PHILIPPINES INC.,,,SKIPPED_INVALID_EMAIL,Email address is empty
