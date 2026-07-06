@@ -1,141 +1,195 @@
-# Email Merge Internship Application Script
+<div align="center">
 
-This project is a Python-based email automation tool designed to send personalized internship application emails using your personal Gmail account via SMTP. It reads recipient information from a CSV spreadsheet, validates email addresses, filters out blacklisted companies, ensures duplicate protection (across multiple runs), attaches a resume PDF, and incorporates random delays (10-20 seconds) between sends.
+# 📧 Email Merge Internship Application Script
+
+_Automated, personalized, and spam-compliant email sender for internship applications using Gmail SMTP._
+
+[![Python Version](https://img.shields.io/badge/Python-3.6+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Gmail SMTP](https://img.shields.io/badge/Gmail-SMTP-red.svg?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/)
+[![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen.svg?style=for-the-badge)](https://github.com/bluecopperwire/email-auto)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 ---
 
-## Quick Start Guide
+</div>
 
-If you just cloned the repository, here is the fastest way to get started:
+This project is a high-reliability, zero-dependency Python script designed to automate mailing internship applications. It replaces placeholders in a template with variables parsed from a CSV file, attaches a resume PDF, and sends emails via Gmail's SMTP server. It features extensive guardrails such as random send spacing, strict validation, automatic skip lists (blacklists), and persistent cross-session duplicate protection.
 
-1. **Clone the Repo & Navigate Inside**:
+---
+
+## 🛠️ System Architecture & Workflow
+
+The script executes the following automated pipeline:
+
+```mermaid
+graph TD
+    A[Start Script] --> B[Load Config & .env]
+    B --> C[Verify Resume PDF Exists]
+    C --> D[Load Past log sent_emails]
+    D --> E[Load blacklist.txt]
+    E --> F[Parse CSV Rows]
+    F --> G{For Each Row}
+    G -->|No More Rows| Z[End Execution & Print Stats]
+    G -->|Process Row| H{In Blacklist?}
+    H -->|Yes| I[Log SKIPPED_BLACKLISTED]
+    H -->|No| J{Valid Email?}
+    J -->|No| K[Log SKIPPED_INVALID_EMAIL]
+    J -->|Yes| L{Already Sent?}
+    L -->|Yes| M[Log SKIPPED_DUPLICATE]
+    L -->|No| N[Random Delay 10-20s]
+    N --> O{Dry Run?}
+    O -->|Yes| P[Simulate Send & Log SENT]
+    O -->|No| Q[Connect & Send Email via Gmail SMTP]
+    Q -->|Success| R[Log SENT & Add to sent_emails]
+    Q -->|Failure| S[Log FAILED & Continue]
+    P --> G
+    R --> G
+    S --> G
+    I --> G
+    K --> G
+    M --> G
+```
+
+---
+
+## ⚡ Quick Start Guide
+
+Ready to run? Follow these five quick steps:
+
+1. **Clone the Repo**:
    ```bash
    git clone https://github.com/bluecopperwire/email-auto.git
    cd email-auto
    ```
 2. **Setup Credentials**:
-   * Copy `.env.template` to `.env` (it is ignored by Git, keeping your secrets safe).
-   * Fill in your Gmail address and Gmail App Password (see generating instructions below).
-3. **Verify Resume & CSV Files**:
+   * Copy `.env.template` to `.env` (this file is ignored by Git, keeping your secrets safe).
+   * Fill in your Gmail address and Gmail App Password in `.env`.
+3. **Verify Attachments & Targets**:
    * Make sure your resume is located at `attachments/Resume.pdf`.
-   * Set `CSV_FILE_PATH` in `.env` to your CSV filename.
-4. **Perform a Dry Run**:
+   * Make sure your target CSV file matches the name specified in the `CSV_FILE_PATH` key in `.env`.
+4. **Run a Safe Simulation**:
    ```bash
    python send_emails.py --dry-run
    ```
-5. **Run the Live Send**:
+5. **Run the Live Execution**:
    ```bash
    python send_emails.py --no-dry-run
    ```
 
 ---
 
-## Features
+## 📊 CSV Input & Mapping Specification
 
-1. **Dynamic CSV Header Discovery**: Automatically scans the CSV to find required headers (`COMPANY'S NAME`, `CONTACT PERSON`, and `EMAIL ADDRESS`), bypassing metadata header rows.
-2. **Blacklist Skipping**: Skips companies or email addresses specified in `blacklist.txt` (useful for companies you have already contacted elsewhere).
-3. **Cross-Run Duplicate Protection**: Scans your execution log (`email_log.csv`) on startup and automatically skips email addresses that have already received a successful send in previous runs.
-4. **Invalid Email Filtering**: Validates emails using standard regex and logs invalid records.
-5. **Anti-Spam Delay**: Adds a random delay (10-20 seconds by default) between sends to simulate natural human pacing.
-6. **Robust Error Resilience**: Individual SMTP failures are caught, logged, and bypassed so the script can proceed with remaining companies.
-7. **Pure Standard Library**: Run out-of-the-box using built-in Python packages (no external package install required).
+The script processes standard internship databases. Although the sheet can contain numerous logging and tracking columns, the script isolates and uses only the following fields:
+
+| CSV Column Name | Used? | Mapping & Behavior |
+| :--- | :---: | :--- |
+| **COMPANY'S NAME** | **Yes** | Logged under target tracking and printed to terminal alerts. |
+| **CONTACT PERSON** | **Yes** | Populates `{Greeting}`. Resolves to `Dear {CONTACT PERSON},` if present; defaults to `Dear Hiring Manager,` if blank. |
+| **EMAIL ADDRESS** | **Yes** | Target recipient. Validated against RFC patterns and indexed as unique key for duplicate prevention. |
+| *All Other Columns* | No | Safely bypassed during stream reading to maximize parsing speed. |
 
 ---
 
-## Directory Structure
+## 🗃️ Directory Structure
+
+Ensure your local directory is organized as follows before launching:
 
 ```text
 email-auto/
 │
 ├── attachments/
-│   └── Resume.pdf                                    # Your resume attachment (must exist)
+│   └── Resume.pdf                                    # Application resume PDF (Required)
 │
-├── (APPLY via PUPInternlink) CCIS Host...csv         # CSV files containing company entries
-├── send_emails.py                                    # Main Python script
-├── blacklist.txt                                     # List of excluded companies or emails
-├── .env.template                                     # Template file for configurations
-├── .env                                              # Local config (secret; ignored by Git)
-├── .gitignore                                        # Specifies files ignored by Git (e.g. .env)
-├── email_log.csv                                     # Generated execution log
-├── PROJECT_MEMORY.md                                 # Project status tracking
-└── README.md                                         # This documentation
+├── (APPLY via PUPInternlink) CCIS Host...csv         # Data spreadsheets containing company info
+├── send_emails.py                                    # Main Python engine
+├── blacklist.txt                                     # List of excluded companies or emails (One per line)
+├── .env.template                                     # Configuration template file
+├── .env                                              # Local environment secrets (Ignored by Git)
+├── .gitignore                                        # Local Git ignore settings
+├── email_log.csv                                     # Automated execution ledger
+├── PROJECT_MEMORY.md                                 # Progress tracker
+└── README.md                                         # Presentation documentation
 ```
 
 ---
 
-## Git Operations
+## 🔒 Security & Git Operations
 
-### 1. Ignored Secret Configurations
-To ensure your Gmail login credentials are secure and never pushed to GitHub, a `.gitignore` file has been set up with the following contents:
+### 1. Credentials Safeguard
+To guarantee your Gmail password and personal details are never exposed to public version control, the repository is pre-configured with a `.gitignore` containing:
 ```text
 .env
 ```
-Always use the `.env` file for local authentication and verify that it remains untracked.
+Ensure you do not commit your `.env` file containing live SMTP passwords.
 
-### 2. Pushing Local Updates to Remote
-If you make changes to the script, documentation, or template files, run these commands to push them back to your repository:
+### 2. Version Control Command Reference
+Stage and push any system updates, modifications, or template changes with the following standard commands:
 ```bash
 git add send_emails.py README.md .env.template blacklist.txt requirements.txt
-git commit -m "update configuration and scripts"
+git commit -m "refactor: optimize system layouts and presentability"
 git push origin main
 ```
 
 ---
 
-## Detailed Setup Instructions
+## ⚙️ Detailed Configuration Guide
 
-### 1. Prerequisites
-- **Python 3.6** or higher must be installed on your system.
-- Optional: run `pip install -r requirements.txt` if you want to use the `python-dotenv` package (the script will fallback to a manual parser if missing, so this is optional).
+<details>
+<summary>🔑 Step 1: Generate a Gmail App Password</summary>
 
-### 2. Gmail App Password Setup
-Google does not allow automated sign-ins using your normal password. You must generate an App Password:
-1. Go to your [Google Account Console](https://myaccount.google.com/).
-2. Click **Security** on the left menu.
-3. Verify that **2-Step Verification** is enabled (this is required to generate app passwords).
-4. Search for **App passwords** in the top search bar.
-5. Enter an app name (e.g., "Internship Automation") and click **Create**.
-6. Copy the displayed 16-character code (e.g., `xxxx xxxx xxxx xxxx`). Paste it into your `.env` file without any spaces.
+Google disables standard password access for automated scripts. You must generate a secure **16-character App Password**:
+1. Open your [Google Account Dashboard](https://myaccount.google.com/).
+2. Navigate to the **Security** tab.
+3. Make sure **2-Step Verification** is turned on.
+4. Search for **App passwords** using the top search bar.
+5. Create a new application name (e.g., "Internship Sender").
+6. Copy the generated 16-character sequence (e.g., `xxxx xxxx xxxx xxxx`). Paste this directly into `.env` with no spaces.
+</details>
 
-### 3. Create the Local `.env` Configuration File
-Duplicate the template file and rename it `.env`:
-* **Windows (PowerShell)**: `Copy-Item .env.template .env`
-* **Linux/macOS**: `cp .env.template .env`
+<details>
+<summary>📝 Step 2: Configure Environment Settings</summary>
 
-Edit `.env` to include your details:
+Rename `.env.template` to `.env` and fill out your variables:
 ```env
 GMAIL_ADDRESS=your.email@gmail.com
-GMAIL_APP_PASSWORD=your_16_character_app_password_without_spaces
-CSV_FILE_PATH=your_csv_filename.csv
-```
+GMAIL_APP_PASSWORD=your16characterapppassword
 
-### 4. Setup the Blacklist File
-Edit `blacklist.txt` to add any company name or email address you want to bypass (one per line). Empty lines or lines starting with `#` are ignored.
+# Set CSV file name (e.g., the 2026 ccis moa list)
+CSV_FILE_PATH=(APPLY via PUPInternlink) CCIS Host Training Establishment Updated 2026-2021.csv
+
+# Default Execution Parameters
+RESUME_PATH=attachments/Resume.pdf
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=465
+MIN_DELAY=10
+MAX_DELAY=20
+DRY_RUN=True
+```
+</details>
+
+<details>
+<summary>🚫 Step 3: Populate Blacklist Exclusions</summary>
+
+Write target company names or specific email addresses in [blacklist.txt](file:///d:/files/Online%20Classes/College/3rd%20Year/2nd%20Sem/random/email-auto/blacklist.txt) that you wish to skip (one entry per line). E.g.:
+```text
+# Blacklist file
+Microsoft
+hr@amazon.com
+Apple Inc.
+```
+</details>
 
 ---
 
-## Executing the Script
+## 📈 Logging, Monitoring & Statuses
 
-### 1. Verification (Dry Run)
-We recommend always performing a dry run first to verify settings, ensure columns parse correctly, and test validation:
-```bash
-python send_emails.py --dry-run
-```
-*(No connection to SMTP will be made. Skips and simulations will write to `email_log.csv`)*
+All actions write real-time entries to [email_log.csv](file:///d:/files/Online%20Classes/College/3rd%20Year/2nd%20Sem/random/email-auto/email_log.csv). The logging statuses are defined as follows:
 
-### 2. Live Send
-To start mailing companies:
-```bash
-python send_emails.py --no-dry-run
-```
-
----
-
-## Logging & Monitoring
-
-All events are recorded in `email_log.csv` with these statuses:
-- `SENT`: Sent successfully (or simulated successfully in Dry Run mode).
-- `FAILED`: SMTP failure (diagnostics are written under `Error Message`).
-- `SKIPPED_DUPLICATE`: Email address was already sent to in a previous run.
-- `SKIPPED_BLACKLISTED`: Company name or email address matches an entry in `blacklist.txt`.
-- `SKIPPED_INVALID_EMAIL`: Blank or invalid email address format.
+| Log Status | Classification | Scenario / Action Taken |
+| :--- | :--- | :--- |
+| **SENT** | Success | Mail successfully delivered (or simulated in `--dry-run`). |
+| **FAILED** | SMTP Failure | Server connection error. Logged with details; script continues. |
+| **SKIPPED_DUPLICATE** | Redundant Target | Email already exists in `email_log.csv` under status `SENT`. |
+| **SKIPPED_BLACKLISTED**| Excluded Target | Target matched an entry in `blacklist.txt` (case-insensitive). |
+| **SKIPPED_INVALID_EMAIL**| Parse Error | Email address column is empty or fails regex formatting tests. |
