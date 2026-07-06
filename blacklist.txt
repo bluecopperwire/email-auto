@@ -1,0 +1,11 @@
+# ==============================================================================
+# Email Merge Blacklist
+# ==============================================================================
+# Add company names or email addresses that you want to skip.
+# - Lines starting with '#' are ignored as comments.
+# - The matching is case-insensitive.
+# - Matches either the COMPANY'S NAME column or the EMAIL ADDRESS column exactly.
+
+ABBE TECHNOLOGY SOLUTIONS, INC.
+ABL ENTERPRISES OPC
+ALBURO ALBURO & ASSOCIATES LAW OFFICES

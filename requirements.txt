@@ -1,0 +1,4 @@
+# requirements.txt
+# This script has zero strict external dependencies. It will run out of the box using Python's standard library.
+# Optional: Install python-dotenv to automatically load environment variables from the .env file.
+python-dotenv>=1.0.0
